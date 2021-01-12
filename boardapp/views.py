@@ -25,7 +25,7 @@ def loginfunc(request):
             login(request, user)
             return render(request, 'login.html', {'context':'loged in'})
         else:
-            return render(request, 'login.html', {'context':'not loged in'})
+            return render(request, 'login.html', {'context':'not logged in'})
     return render(request, 'login.html', {'context':'get method'})
 
 def listfunc(request):
